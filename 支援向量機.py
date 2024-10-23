@@ -1,3 +1,12 @@
+# 請不要動
+import subprocess
+import sys
+subprocess.check_call([sys.executable, "-m", "pip", "install", "matplotlib"])
+subprocess.check_call([sys.executable, "-m","pip", "install", "numpy"])
+subprocess.check_call([sys.executable, "-m","pip", "install", "pandas"])
+subprocess.check_call([sys.executable, "-m","pip", "install", "scikit-learn"])
+
+# 請不要動
 from sklearn import svm
 import pandas as pd
 import numpy as np
@@ -12,7 +21,7 @@ from sklearn.metrics import classification_report
 from sklearn.metrics import confusion_matrix,accuracy_score
 
 # 讀取資料檔案
-data =  pd.read_csv('week3_1.csv')
+data =  pd.read_csv('financial.csv')
 print(data.head())
 total_sample=data.shape[0]
 # 資料筆數
