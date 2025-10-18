@@ -51,5 +51,6 @@ def draw_neural_net(ax, left, right, bottom, top, layer_sizes):
 fig = plt.figure(figsize=(7.5, 7.5))
 ax = fig.gca()
 ax.axis('off')
-draw_neural_net(ax, .1, .9, .1, .9, [4, 5, 2])
+draw_neural_net(ax, .1, .9, .1, .9, [4, 5, 3])
+plt.savefig('neural.png')
 plt.show()
